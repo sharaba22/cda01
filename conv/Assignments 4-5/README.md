@@ -1,6 +1,6 @@
 # Network-to-Image DDoS Classifier — Detailed README
 
-## Purpose (top of file — conversion description)
+## Purpose
 This project converts network flow/tabular data (CSV format, e.g. `Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv`) into image representations and trains a Convolutional Neural Network (CNN) to classify DDoS vs benign/DDoS traffic. Converting tabular network data into images lets CNNs learn spatial patterns that may correspond to temporal or multi-feature correlations in flows. You can create **one image per flow** or **multiple images per flow** (several strategies described below).
 
 ### Conversion strategies (how to convert CSV network data into images)
@@ -132,3 +132,6 @@ Key parts:
 - **Cross-validation**: Use k-fold cross-validation across flows/time to estimate generalization robustly.
 - **Evaluation**: Use precision, recall, F1-score, and ROC-AUC (not just accuracy) because the dataset is often imbalanced.
 - **Deployment**: For real-time detection, consider models that can operate on sliding windows over streaming packet features.
+
+## Project Link
+**https://github.com/sharaba22/cda01/tree/main/conv/Assignments%204-5** 
